@@ -24,11 +24,20 @@
         </a>
       </div>
     </div>
+    <Notification content="test" btn="close"/>
   </div>
 </template>
 
 <script>
-export default {}
+import Notification from '@/components/notification/notification';
+export default {
+  components:{
+    Notification
+  },
+  created() {
+    // this.$notification();
+  }
+}
 </script>
 
 <style>
